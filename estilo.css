@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'android' ;
+    src: url('android/fontes/idroid.otf') format('truetype');
+}face
+html, body{
+    margin: 0;
+    background-color: #e8e7c4;
+    
+}
+h1{
+    margin: 0;
+}
+.header{
+    margin: 0 ;
+    padding: 20px 0 0 0;
+    height: 200px;
+    background: rgb(36,144,84);
+    background: linear-gradient(180deg, rgba(36,144,84,1) 29%, rgba(2,57,25,1) 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.header > h1{
+    margin: 0 120px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.664);
+    text-align: center; 
+    
+
+}
+.header > h2{
+    margin: 0 120px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.664);
+    text-align: center; 
+
+}
+.nav{
+    width:35%;
+}
+.navmenu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navmenu li{
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(45, 211, 120);
+
+}
+.navmenu li:hover{
+    background-color:rgb(42, 190, 109);
+    color: rgb(0, 0, 0);
+}
+.principal{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.section{
+    padding: 10px ;
+    
+}
+.article{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+    align-items: center;
+}
+.extra{
+    
+    border-radius: 15px;
+    background-color: #9ee9be ;
+}
+.extra h3{
+    border-radius: 15px 10px 0 0;
+    margin: 0;
+    padding: 7px;
+    color: white;
+    background-color:rgba(2,57,25,1) ;
+}
+.extra ul{
+    list-style: '✓' ;
+    padding: 0;
+    margin-left: 50px;
+}
+.extra p{
+    padding: 5px;
+}
+.tabela{
+    padding: 5px;
+    display: flex;
+    
+}
+#personalizada{
+    width: 100%;
+    font-family: 'android','Times New Roman', Times, serif;
+    font-weight: normal; 
+}
+img, iframe{
+    margin: 20px 0;
+}
+
+.tituloverde{
+    width: 100%;
+    background: rgb(158,233,190);
+    background: linear-gradient(90deg, rgba(158,233,190,1) 0%, rgba(255,255,255,1) 100%);
+    font-family: 'android','Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color:rgb(3, 80, 35);
+    color: white;
+}
+@media(max-width:900px){
+    .header {
+        font-size: 0.8rem;
+    }
+    img{
+        width: 400px;
+    }
+    iframe{
+        width: 400px;
+    }
+    .nav{
+        width:100%
+    }
+    .tituloverde{
+        font-size: 1.0rem;
+    }
+}
+@media(max-width:500px){
+    .header h1{
+        margin: 0 auto;
+        width: 200px;
+        font-size: 1rem;
+    }
+    .header h2{
+        margin: 0 auto;
+        width: 250px;
+        font-size: 0.8rem;
+    }
+    img{
+        width: 200px;
+    }
+    iframe{
+        height: 150px;
+        width: 200px;
+    }
+    .extra{
+        width: 100%;
+    }
+    .tabela {
+       flex-wrap: wrap;
+    }
+}
